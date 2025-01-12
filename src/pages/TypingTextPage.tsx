@@ -1,6 +1,6 @@
 import { TypingText } from "../components/TypingText";
 
-export const TypingTextPage = (props: {}) => {
+export const TypingTextPage = () => {
   return (
     <div>
        <p className="text-4xl w-[400px]">

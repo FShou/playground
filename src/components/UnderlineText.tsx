@@ -1,4 +1,4 @@
-export const UnderlineText = ({ text,border }: { text: string, border:number }) => {
+export const UnderlineText = ({ text}: { text: string, border:number }) => {
   return (
     <span className={`before:h-[2px] before:bg-red-500 before:scale-x-0 relative before:transition before:duration-300 hover:before:scale-x-100 before:absolute before:bottom-0 before:left-0 before:origin-right hover:before:origin-left before:w-full`}>
       {text}
