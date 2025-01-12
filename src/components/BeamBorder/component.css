@@ -1,0 +1,31 @@
+.gradient-border::before {
+  content: "";
+  -webkit-mask:
+    linear-gradient(0 0 0) content-box,
+    linear-gradient(0 0 0);
+  mask:
+    linear-gradient(0 0 0) content-box,
+    linear-gradient(0 0 0);
+  mask-clip: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: calc(var(--borderWidth) * 1px);
+  background: var(--background);
+  border-radius: inherit;
+  position: absolute;
+  inset: calc(var(--borderWidth) * -1px);
+  pointer-events: none;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+@keyframes beam {
+  to {
+    --angle: 1turn;
+  }
+}
+
