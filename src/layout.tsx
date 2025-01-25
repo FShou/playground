@@ -22,12 +22,16 @@ const routes = [
     path: "/typingText",
     name: "typingText",
   },
+ {
+    path: "/bgParalax",
+    name: "bgParalax",
+  },
 ];
 
 export const Layout = () => {
   return (
     <div className="relative bg-gray-50 z-10 h-[100vh] w-full grid place-items-center">
-      <nav className="absolute top-0 inset-x-0 m-1 min-h-16 bg-neutral-900 rounded-xl flex justify-center items-center gap-4">
+      <nav className="absolute top-0 inset-x-0 m-1 z-50 min-h-16 bg-neutral-900 rounded-xl flex justify-center items-center gap-4">
         {routes.map((route) => (
           <NavLink to={route.path} className="text-white text-xl rounded-xl p-2" style={({isActive})=> (
             {

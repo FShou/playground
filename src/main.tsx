@@ -7,6 +7,7 @@ import { UnderlinePage as HightlightedTextsPage } from "./pages/HightlightedText
 import { CollapsiblePage } from "./pages/CollapsiblePage";
 import { ScalingImgPage } from "./pages/ScalingImgPage";
 import { TypingTextPage } from "./pages/TypingTextPage";
+import BackgroundParalax from "./pages/BackgroundParalax";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/collapsible" element={<CollapsiblePage />} />
         <Route path="/scalingImg" element={<ScalingImgPage />} />
         <Route path="/typingText" element={<TypingTextPage />} />
+        <Route path="/bgParalax" element={<BackgroundParalax />} />
       </Route>
     </Routes>
   </BrowserRouter>,
